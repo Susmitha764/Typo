@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignSphere | Typography & Graphic Design Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+ 
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.png" alt="DesignSphere Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#typography">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#graphic-design">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Bootstrap Carousel -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-content bg-light-blue">
+                        <h1>Explore Beautiful Typography</h1>
+                        <p class="lead">Discover the art of letterforms and type design</p>
+                        <a href="#typography" class="btn btn-primary btn-lg">View Collection</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content bg-light-yellow">
+                        <h1>Stunning Graphic Designs</h1>
+                        <p class="lead">Inspiration for your next creative project</p>
+                        <a href="#graphic-design" class="btn btn-primary btn-lg">Get Inspired</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content bg-light-green">
+                        <h1>Essential Design Tools</h1>
+                        <p class="lead">Resources to elevate your creative workflow</p>
+                        <a href="#tools" class="btn btn-primary btn-lg">Explore Tools</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Typography & Scripts Page -->
+    <section id="typography" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Typography & Scripts</h2>
+            
+            <!-- Bootstrap Tabs -->
+            <ul class="nav nav-tabs mb-4" id="typographyTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="serif-tab" data-bs-toggle="tab" data-bs-target="#serif" type="button">Serif</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sans-tab" data-bs-toggle="tab" data-bs-target="#sans" type="button">Sans-Serif</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="script-tab" data-bs-toggle="tab" data-bs-target="#script" type="button">Script</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="display-tab" data-bs-toggle="tab" data-bs-target="#display" type="button">Display</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="typographyTabContent">
+                <div class="tab-pane fade show active" id="serif" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-playfair">Playfair Display</h3>
+                                    <p>A sophisticated transitional serif with high contrast and delicate hairlines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-garamond">Garamond</h3>
+                                    <p>An elegant old-style serif typeface with a timeless quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-baskerville">Baskerville</h3>
+                                    <p>A transitional serif with organic forms and vertical stress.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-bodoni">Bodoni</h3>
+                                    <p>A modern serif with extreme contrast between thick and thin strokes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="sans" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-helvetica">Helvetica</h3>
+                                    <p>The quintessential neutral sans-serif with clean, no-nonsense lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-futura">Futura</h3>
+                                    <p>A geometric sans-serif based on simple geometric shapes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-gill-sans">Gill Sans</h3>
+                                    <p>A humanist sans-serif with subtle variation in stroke width.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="font-roboto">Roboto</h3>
+                                    <p>A modern, approachable sans-serif with mechanical skeletons.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other tab panes would follow the same pattern -->
+            </div>
+            
+            <!-- Bootstrap Accordion -->
+            <div class="accordion mt-5" id="typographyAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#typeHistory">
+                            History of Typography
+                        </button>
+                    </h2>
+                    <div id="typeHistory" class="accordion-collapse collapse show" data-bs-parent="#typographyAccordion">
+                        <div class="accordion-body">
+                            <p>Typography has a rich history dating back to the invention of movable type by Johannes Gutenberg in the 15th century. The development of typefaces has evolved through several distinct periods:</p>
+                            <ul>
+                                <li><strong>Blackletter (1400s):</strong> The first typefaces modeled after handwritten manuscripts.</li>
+                                <li><strong>Humanist (late 1400s):</strong> More readable forms inspired by Roman inscriptions.</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#typeTerms">
+                            Typography Terms
+                        </button>
+                    </h2>
+                    <div id="typeTerms" class="accordion-collapse collapse" data-bs-parent="#typographyAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>Kerning:</strong> The adjustment of space between individual letter pairs.</p>
+                                    <p><strong>Leading:</strong> The vertical space between lines of text.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>X-height:</strong> The height of lowercase letters, excluding ascenders and descenders.</p>
+                                    <p><strong>Serif:</strong> The small decorative strokes at the ends of letterforms.</p>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            
+            
+        
+        <!-- Design Modals -->
+        <div class="modal fade" id="designModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Poster Design Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://source.unsplash.com/random/800x500/?poster" class="img-fluid mb-3" alt="Poster Design">
+                        <p>This minimalist poster design utilizes a limited color palette and bold typography to create visual impact. The design follows principles of Swiss Style with strong grid alignment and emphasis on negative space.</p>
+                        <p><strong>Techniques used:</strong> Digital illustration, typographic hierarchy, color blocking</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional modals would follow the same pattern -->
+    </section>
+
+    <!-- Tools & Resources Page -->
+    <section id="tools" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tools & Resources</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-pen-fancy fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Typography Tools</h5>
+                            <p class="card-text">Essential resources for working with type</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#typographyToolsModal">View Resources</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-palette fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Color Resources</h5>
+                            <p class="card-text">Tools for creating perfect color schemes</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#colorToolsModal">View Resources</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Design Software</h5>
+                            <p class="card-text">Applications for graphic design work</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#softwareModal">View Resources</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bootstrap Alerts -->
+            <div class="alert alert-info mt-5">
+                <h4 class="alert-heading">Pro Tip!</h4>
+                <p>Bookmark these resources for quick access during your design process. Many offer free versions or trials.</p>
+                <hr>
+                <p class="mb-0">Check back regularly as we update our recommendations with new tools.</p>
+            </div>
+            
+            <!-- Resource Modals -->
+            <div class="modal fade" id="typographyToolsModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Typography Tools</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Google Fonts
+                                    <a href="https://fonts.google.com" target="_blank" class="badge bg-primary rounded-pill">Visit</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Adobe Fonts
+                                    <a href="https://fonts.adobe.com" target="_blank" class="badge bg-primary rounded-pill">Visit</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    FontPair
+                                    <a href="https://fontpair.co" target="_blank" class="badge bg-primary rounded-pill">Visit</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Typewolf
+                                    <a href="https://www.typewolf.com" target="_blank" class="badge bg-primary rounded-pill">Visit</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional modals would follow the same pattern -->
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Get in Touch</h4>
+                            <p class="card-text">Have questions about typography or design? Want to showcase your work? Send us a message!</p>
+                            
+                            <!-- Bootstrap Form -->
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option value="general">General Inquiry</option>
+                                        <option value="showcase">Work Showcase</option>
+                                        <option value="collaboration">Collaboration</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Connect With Us</h4>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-map-marker-alt me-2"></i> Our Location</h5>
+                                <p>123 Design Street, Creative City, CA 90210</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                                <p>info@designsphere.com</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                                <p>(123) 456-7890</p>
+                            </div>
+                            <div>
+                                <h5><i class="fas fa-share-alt me-2"></i> Social Media</h5>
+                                <div class="social-icons mt-2">
+                                    <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                                    <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                                    <a href="#" class="text-decoration-none me-3"><i class="fab fa-behance fa-2x"></i></a>
+                                    <a href="#" class="text-decoration-none"><i class="fab fa-dribbble fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="Logo.png" alt="DesignSphere Logo" height="30" class="mb-3">
+                    <p>Exploring the art of typography and graphic design since 2023.</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#typography" class="text-white text-decoration-none">Typography</a></li>
+                        <li><a href="#graphic-design" class="text-white text-decoration-none">Graphic Design</a></li>
+                        <li><a href="#tools" class="text-white text-decoration-none">Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Tutorials</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Freebies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 DesignSphere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
